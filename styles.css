@@ -1,0 +1,411 @@
+/* Tong Zheng — Academic Homepage */
+
+:root {
+  --bg: #faf9f7;
+  --surface: #ffffff;
+  --text: #1a1a1a;
+  --text-muted: #5c5c5c;
+  --accent: #8b2942;
+  --accent-hover: #6d1f33;
+  --border: #e8e4df;
+  --link: #8b2942;
+  --link-hover: #6d1f33;
+  --badge-new: #c45c26;
+  --font-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --max-width: 720px;
+  --radius: 6px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Header */
+.site-header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 2.5rem 0 2rem;
+}
+
+.profile {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.75rem;
+}
+
+.profile-photo {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
+.profile-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.header-inner {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.name {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 0.35rem;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.name-cn {
+  font-weight: 400;
+  color: var(--text-muted);
+  font-size: 0.85em;
+}
+
+.contact {
+  margin: 0 0 0.75rem;
+  font-size: 0.95rem;
+}
+
+.contact a {
+  color: var(--text-muted);
+}
+
+.contact a:hover {
+  color: var(--accent);
+}
+
+.profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.profile-links a {
+  color: var(--accent);
+}
+
+.profile-links a:hover {
+  color: var(--accent-hover);
+}
+
+/* Sections */
+main {
+  padding: 2rem 0 3rem;
+}
+
+.section {
+  margin-bottom: 2.75rem;
+}
+
+.section h2 {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin: 0 0 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid var(--border);
+  color: var(--text);
+}
+
+.section h2 .muted {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+.section p {
+  margin: 0 0 1rem;
+}
+
+.research-summary {
+  margin-top: 0.25rem;
+}
+
+.research-intro {
+  margin: 0 0 1.1rem;
+  padding-left: 1rem;
+  border-left: 4px solid var(--accent);
+  color: var(--text);
+  line-height: 1.65;
+}
+
+.research-block {
+  margin: 0 0 1rem;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.research-block:last-child {
+  margin-bottom: 0;
+}
+
+.research-theme {
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.research-summary .paper-link {
+  color: #1a56a8;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.research-summary .paper-link:hover {
+  color: #0d3d7a;
+  text-decoration: underline;
+}
+
+/* Experience */
+.experience-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.experience-list li {
+  margin-bottom: 0.65rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.experience-meta {
+  color: var(--text-muted);
+  font-size: 0.88rem;
+}
+
+.experience-meta::before {
+  content: " · ";
+}
+
+/* News */
+.news-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.news-list li {
+  display: grid;
+  grid-template-columns: 7.5rem 1fr;
+  gap: 0.75rem 1rem;
+  padding: 0.55rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.92rem;
+}
+
+.news-list li:last-child {
+  border-bottom: none;
+}
+
+.news-list time {
+  font-variant-numeric: tabular-nums;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.news-collapse {
+  margin-top: 0.25rem;
+}
+
+.news-collapse summary {
+  cursor: pointer;
+  color: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 500;
+  list-style: none;
+  padding: 0.6rem 0;
+  user-select: none;
+}
+
+.news-collapse summary::-webkit-details-marker {
+  display: none;
+}
+
+.news-collapse summary::before {
+  content: "▸ ";
+  display: inline-block;
+  transition: transform 0.15s ease;
+}
+
+.news-collapse[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.news-collapse summary:hover {
+  color: var(--accent-hover);
+}
+
+/* Publications */
+.pub {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.pub:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.pub-featured {
+  position: relative;
+}
+
+.badge {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.15em 0.45em;
+  border-radius: 3px;
+  margin-bottom: 0.35rem;
+  vertical-align: middle;
+}
+
+.badge-new {
+  background: #fef3eb;
+  color: var(--badge-new);
+  border: 1px solid #f5d4bc;
+}
+
+.pub-title {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0 0 0.25rem;
+  line-height: 1.4;
+}
+
+.pub-links {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.pub-links a {
+  margin-left: 0.15rem;
+}
+
+.pub-venue {
+  margin: 0 0 0.35rem;
+  font-size: 0.88rem;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.pub-authors {
+  margin: 0;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.pub-authors strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* Honors */
+.honors-list {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.honors-list li {
+  margin-bottom: 0.4rem;
+}
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 1.5rem 0 2rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+.site-footer a {
+  color: var(--text-muted);
+}
+
+.site-footer a:hover {
+  color: var(--accent);
+}
+
+/* Responsive */
+@media (max-width: 540px) {
+  .profile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-links {
+    justify-content: center;
+  }
+
+  .name {
+    font-size: 1.65rem;
+  }
+
+  .news-list li {
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+  }
+
+  .news-list time {
+    font-weight: 500;
+  }
+}

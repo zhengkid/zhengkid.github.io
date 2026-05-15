@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tong Zheng — Ph.D. student at University of Maryland. Research on efficient language models and next-generation reasoning.">
+  <title>Tong Zheng | Homepage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="profile">
+        <img
+          class="profile-photo"
+          src="assets/photo.jpg"
+          alt="Portrait of Tong Zheng"
+          width="140"
+          height="140"
+        >
+        <div class="profile-text">
+          <h1 class="name">Tong Zheng <span class="name-cn">郑童</span></h1>
+          <p class="contact">
+            <a href="mailto:zhengtong12356@gmail.com">zhengtong12356@gmail.com</a>
+          </p>
+          <nav class="profile-links" aria-label="External profiles">
+            <a href="https://scholar.google.com/citations?user=kidzheng" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+            <a href="https://github.com/kidzheng" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://x.com/zhengtoong" target="_blank" rel="noopener noreferrer">X</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>
+        I am a second-year Ph.D. student at the <a href="https://www.umd.edu/">University of Maryland, College Park</a>,
+        advised by <a href="https://www.cs.umd.edu/~heng/">Prof. Heng Huang</a>. Previously, I worked as a research assistant
+        at the Natural Language Processing Laboratory of Northeastern University (China), supervised by
+        <a href="https://xiaotong.me/">Prof. Tong Xiao</a>. I received my B.E. degree from Northeastern University of
+        Computer Science and Engineering in 2021.
+      </p>
+    </section>
+
+    <section id="research" class="section">
+      <h2>Research</h2>
+      <div class="research-summary">
+        <p class="research-intro">
+          My research focuses on enhancing LLM reasoning and test-time scaling.
+        </p>
+
+        <p class="research-block">
+          <span class="research-theme">Reasoning and Test-Time Scaling:</span>
+          <a class="paper-link" href="#">Parallel-R1 (ICLR'26)</a>
+          introduces first RL-based parallel thinking for LLMs, moving beyond sequential chain-of-thought.
+          <a class="paper-link" href="https://arxiv.org/abs/2605.08083">AutoTTS (arXiv'26)</a>
+          unlocks a new direction for test-time scaling—automatically discovering strategies via agentic search instead of hand-crafted inference heuristics.
+          <a class="paper-link" href="#">Parallel-Probe (ICML'26)</a>
+          enables efficient parallel thinking through 2D probing.
+          <a class="paper-link" href="#">MoT (ICLR'26)</a>
+          explores mixture-of-thought representations for logical reasoning.
+        </p>
+
+        <p class="research-block">
+          <span class="research-theme">Efficient Training &amp; Inference:</span>
+          <a class="paper-link" href="#">Multi-Draft Speculative Decoding (ICLR'25)</a>
+          improves the inference speed–quality trade-off via multi-draft decoding.
+          <a class="paper-link" href="#">Asymmetric MMT (ACL'25)</a>
+          studies conflict and synergy in post-training for multilingual machine translation.
+        </p>
+
+        <p class="research-block">
+          <span class="research-theme">Foundation Models:</span>
+          <a class="paper-link" href="#">UMST (ICML'22)</a>
+          proposes multiscale Transformer modeling for sequence generation.
+          <a class="paper-link" href="#">EIT (ACL'24)</a>
+          enhances Transformers via subspace interaction.
+          <a class="paper-link" href="#">PartialFormer (ACL Findings'24)</a>
+          models parts instead of whole sequences for better efficiency.
+        </p>
+      </div>
+    </section>
+
+    <section id="news" class="section">
+      <h2>News</h2>
+      <ul class="news-list">
+        <li>
+          <time datetime="2026-05">May 2026</time>
+          <span>New preprint <strong>AutoTTS</strong>: <em>LLMs Improving LLMs: Agentic Discovery for Test-Time Scaling</em> on <a href="https://arxiv.org/abs/2605.08083">arXiv</a>.</span>
+        </li>
+        <li>
+          <time datetime="2026-04">April 2026</time>
+          <span>One paper accepted for publication at <strong>ICML 2026</strong>.</span>
+        </li>
+        <li>
+          <time datetime="2026-04">April 2026</time>
+          <span>Two papers accepted for publication at <strong>ACL 2026 Main</strong>.</span>
+        </li>
+        <li>
+          <time datetime="2026-03">March 2026</time>
+          <span>I will join <strong>Google</strong> as a student researcher this summer.</span>
+        </li>
+        <li>
+          <time datetime="2026-02">Feb 2026</time>
+          <span>One paper accepted for publication at <strong>CVPR 2026</strong>.</span>
+        </li>
+        <li>
+          <time datetime="2026-01">Jan 2026</time>
+          <span>Three papers accepted for publication at <strong>ICLR 2026</strong>.</span>
+        </li>
+      </ul>
+      <details class="news-collapse">
+        <summary>Older news</summary>
+        <ul class="news-list">
+        <li>
+          <time datetime="2025-10">Oct 2025</time>
+          <span>Check our new paper for VLM exploration: <strong>VOGUE</strong> — visual uncertainty guided exploration.</span>
+        </li>
+        <li>
+          <time datetime="2025-09">Sep 2025</time>
+          <span>Check our new papers for LLM reasoning: <strong>Parallel-R1</strong> and <strong>CDE</strong>.</span>
+        </li>
+        <li>
+          <time datetime="2025-08">Aug 2025</time>
+          <span>One paper accepted for publication at <strong>EMNLP 2025</strong>.</span>
+        </li>
+        <li>
+          <time datetime="2025-05">May 2025</time>
+          <span>Two papers accepted for publication at <strong>ACL 2025 Findings</strong>.</span>
+        </li>
+        <li>
+          <time datetime="2025-02">Feb 2025</time>
+          <span>I will join <strong>Tencent AI Lab (Seattle)</strong> as a research intern this summer.</span>
+        </li>
+        <li>
+          <time datetime="2025-01">Jan 2025</time>
+          <span>One paper accepted for publication at <strong>ICLR 2025</strong>.</span>
+        </li>
+        <li>
+          <time datetime="2024-09">Sep 2024</time>
+          <span>One paper accepted for publication at <strong>NeurIPS 2024</strong>.</span>
+        </li>
+        <li>
+          <time datetime="2024-09">Sep 2024</time>
+          <span>One paper accepted for publication at <strong>EMNLP 2024 Main</strong>.</span>
+        </li>
+        <li>
+          <time datetime="2024-08">Aug 2024</time>
+          <span>Started my Ph.D. study at University of Maryland, College Park.</span>
+        </li>
+        <li>
+          <time datetime="2024-05">May 2024</time>
+          <span>Two papers accepted for publication at <strong>ACL 2024</strong> (1 Main, 1 Findings).</span>
+        </li>
+        <li>
+          <time datetime="2023-10">Oct 2023</time>
+          <span>One paper accepted at <strong>Findings of EMNLP 2023</strong>.</span>
+        </li>
+        <li>
+          <time datetime="2022-05">May 2022</time>
+          <span><em>Learning Multiscale Transformer Models for Sequence Generation</em> accepted at <strong>ICML 2022</strong> (First ICML in NEUNLP).</span>
+        </li>
+        <li>
+          <time datetime="2021-09">Sep 2021</time>
+          <span>Joined NEUNLP lab as a research assistant.</span>
+        </li>
+        <li>
+          <time datetime="2021-06">Jun 2021</time>
+          <span>Graduated from Northeastern University with an average GPA of 4.0.</span>
+        </li>
+        </ul>
+      </details>
+    </section>
+
+    <section id="experience" class="section">
+      <h2>Experience</h2>
+      <ul class="experience-list">
+        <li>
+          <strong>Google</strong> — Student Researcher
+          <span class="experience-meta">Summer 2026</span>
+        </li>
+        <li>
+          <strong>Tencent AI Lab</strong> (Seattle) — Research Intern
+          <span class="experience-meta">Summer 2025</span>
+        </li>
+      </ul>
+    </section>
+
+    <section id="publications" class="section">
+      <h2>Selected Publications <span class="muted">(* Equal Contribution)</span></h2>
+
+      <article class="pub pub-featured">
+        <span class="badge badge-new">NEW</span>
+        <h3 class="pub-title">
+          LLMs Improving LLMs: Agentic Discovery for Test-Time Scaling
+          <span class="pub-links"><a href="https://arxiv.org/abs/2605.08083">paper</a></span>
+        </h3>
+        <p class="pub-venue">arXiv, May 2026</p>
+        <p class="pub-authors"><strong>Tong Zheng</strong>, Haolin Liu, Chengsong Huang, Huiwen Bao, Sheng Zhang, Rui Liu, Runpeng Dai, Ruibo Chen, Chenxi Liu, Tianyi Xiong, Xidong Wu, Hongming Zhang, Heng Huang</p>
+      </article>
+
+      <article class="pub pub-featured">
+        <span class="badge badge-new">NEW</span>
+        <h3 class="pub-title">
+          Parallel-Probe: Towards Efficient Parallel Thinking via 2D Probing
+          <span class="pub-links"><a href="#">paper</a></span>
+        </h3>
+        <p class="pub-venue">ICML 2026</p>
+        <p class="pub-authors"><strong>Tong Zheng*</strong>, Chengsong Huang*, Runpeng Dai*, Yun He, Rui Liu, Xin Ni, Huiwen Bao, Kaishen Wang, Hongtu Zhu, Jiaxin Huang, Furong Huang, Heng Huang</p>
+      </article>
+
+      <article class="pub pub-featured">
+        <span class="badge badge-new">NEW</span>
+        <h3 class="pub-title">
+          Parallel-R1: Towards Parallel Thinking via Reinforcement Learning
+          <span class="pub-links"><a href="#">paper</a> · <a href="#">Project</a></span>
+        </h3>
+        <p class="pub-venue">ICLR 2026 Main Conference; NeurIPS ER Workshop Spotlight</p>
+        <p class="pub-authors"><strong>Tong Zheng</strong>, Hongming Zhang, Wenhao Yu, Xiaoyang Wang, Xinyu Yang, Runpeng Dai, Rui Liu, Huiwen Bao, Chengsong Huang, Heng Huang, Dong Yu</p>
+      </article>
+
+      <article class="pub pub-featured">
+        <span class="badge badge-new">NEW</span>
+        <h3 class="pub-title">
+          Learning to Reason via Mixture-of-Thought for Logical Reasoning
+          <span class="pub-links"><a href="#">paper</a></span>
+        </h3>
+        <p class="pub-venue">ICLR 2026 Main Conference; NeurIPS ER Workshop</p>
+        <p class="pub-authors"><strong>Tong Zheng*</strong>, Lichang Chen*, Simeng Han, R. Thomas McCoy, Heng Huang</p>
+      </article>
+
+      <article class="pub">
+        <h3 class="pub-title">
+          Asymmetric Conflict and Synergy in Post-training for LLM-based Multilingual Machine Translation
+          <span class="pub-links"><a href="#">paper</a></span>
+        </h3>
+        <p class="pub-venue">ACL Findings, 2025</p>
+        <p class="pub-authors"><strong>Tong Zheng</strong>, Yan Wen, Huiwen Bao, Junfeng Guo, Heng Huang</p>
+      </article>
+
+      <article class="pub">
+        <h3 class="pub-title">
+          Towards Optimal Multi-draft Speculative Decoding
+        </h3>
+        <p class="pub-venue">ICLR 2025</p>
+        <p class="pub-authors">Zhengmian Hu*, <strong>Tong Zheng*</strong>, Vignesh Viswanathan, Ziyi Chen, Ryan A. Rossi, Yihan Wu, Dinesh Manocha, Heng Huang</p>
+      </article>
+
+      <article class="pub">
+        <h3 class="pub-title">
+          A Bayesian Approach to Harnessing the Power of LLMs in Authorship Attribution
+        </h3>
+        <p class="pub-venue">EMNLP 2024 Main</p>
+        <p class="pub-authors">Zhengmian Hu*, <strong>Tong Zheng*</strong>, Heng Huang</p>
+      </article>
+
+      <article class="pub">
+        <h3 class="pub-title">
+          PartialFormer: Modeling Part Instead of Whole
+          <span class="pub-links"><a href="#">Paper</a></span>
+        </h3>
+        <p class="pub-venue">ACL 2024 Findings</p>
+        <p class="pub-authors"><strong>Tong Zheng*</strong>, Bei Li*, Huiwen Bao*, Weiqiao Shan, Tong Xiao, Jingbo Zhu</p>
+      </article>
+
+      <article class="pub">
+        <h3 class="pub-title">
+          EIT: Enhanced Interactive Transformer
+          <span class="pub-links"><a href="#">Paper</a></span>
+        </h3>
+        <p class="pub-venue">ACL 2024 Main Conference</p>
+        <p class="pub-authors"><strong>Tong Zheng*</strong>, Bei Li*, Huiwen Bao*, Tong Xiao, Jingbo Zhu</p>
+      </article>
+
+      <article class="pub">
+        <h3 class="pub-title">
+          Learning Multiscale Transformer Models for Sequence Generation
+          <span class="pub-links"><a href="#">Paper</a></span>
+        </h3>
+        <p class="pub-venue">ICML 2022</p>
+        <p class="pub-authors">Bei Li*, <strong>Tong Zheng*</strong>, Yi Jing*, Chengbo Jiao, Tong Xiao, Jingbo Zhu</p>
+      </article>
+    </section>
+
+    <section id="manuscript" class="section">
+      <h2>Manuscript</h2>
+      <article class="pub">
+        <h3 class="pub-title">
+          BrainTGL: Temporal Graph Representation Learning for Brain Network by Exploiting Graph Temporal Information
+          <span class="pub-links"><a href="#">Manuscript</a></span>
+        </h3>
+        <p class="pub-venue">Finished at August 2021</p>
+        <p class="pub-authors">Tong Zheng</p>
+      </article>
+    </section>
+
+    <section id="honors" class="section">
+      <h2>Selected Honors</h2>
+      <ul class="honors-list">
+        <li>UMD Dean's Fellowship, 2024–2026</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Last updated May 2026 · <a href="https://github.com/kidzheng/kidzheng.github.io">Source</a></p>
+    </div>
+  </footer>
+</body>
+</html>
