@@ -137,6 +137,17 @@ main {
   padding: 2rem 0 3rem;
 }
 
+.job-market {
+  margin: 0 0 2.5rem;
+  padding: 0.9rem 1.1rem;
+  font-size: 0.925rem;
+  line-height: 1.6;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius);
+}
+
 .section {
   margin-bottom: 2.75rem;
 }
